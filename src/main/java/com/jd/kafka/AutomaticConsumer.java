@@ -14,7 +14,7 @@ public class AutomaticConsumer {
      */
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "node01:9092");
+        props.put("bootstrap.servers", "hadoop01:9092");
         props.put("group.id", "test_group");  //消费组
         props.put("enable.auto.commit", "true");//允许自动提交offset
         props.put("auto.commit.interval.ms", "1000");//每隔多久自动提交offset

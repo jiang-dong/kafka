@@ -17,7 +17,7 @@ public class Stream {
 
         Properties properties = new Properties();
         properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "bigger");
-        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "node01:9092");
+        properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "hadoop01:9092");
         properties.put(StreamsConfig.KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());//key的序列化和反序列化的类
         properties.put(StreamsConfig.VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         //获取核心类 KStreamBuilder

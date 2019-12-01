@@ -30,7 +30,7 @@ public class OrderConsumer {
             ConsumerRecords<String, String> consumerRecords = kafkaConsumer.poll(100);
             // jdk queue offer插入、poll获取元素。 blockingqueue put插入原生， take获取元素
             for (ConsumerRecord<String, String> record : consumerRecords) {
-                System.out.println("消费的数据为：" + record.value());
+               // System.out.println("消费的数据为：" + record.value());
                 System.out.printf("offset = %d, key = %s, value = %s", record.offset(), record.key(), record.value());
             }
         }
